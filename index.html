@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>DopeJack</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content nextScreen">
+            <div class="title">
+                <div class="head">
+                    <h1>blackJack</h1>
+                    <p>make a fortune today</p>
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-bars insider"></i>
+                    <span class="original">
+                        <div class="info">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="userNam">
+                                <h5>name of player</h5>
+                                <h6>region</h6>
+                            </div>
+                        </div>
+                        <div class="things">
+                            <h4>menu</h4>
+                            <h4>leaderBoard</h4>
+                            <h4>settings</h4>
+                            <h4>quit</h4>
+                        </div>
+                        <div class="quit">
+                            <i class="fa-solid fa-close insidemenu"></i>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="gamemode">
+                <h2>round 1</h2>
+                <h3 class="showcards">cards:</h3>
+                <p></p>
+            </div>
+            <div class="btn">
+                <button class="start">draw card</button>
+                <button class="draw">add card</button>
+            </div>
+            <div class="score">
+                <h4>draw card</h4>
+                <span>you earn: $25</span>
+                <p>balance: $140</p>
+            </div>
+        </div>
+        <div class="userinput">
+            <div class="title">
+                <div class="head">
+                    <h1>blackJack</h1>
+                    <p>make a fortune today</p>
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-bars outside"></i>
+                    <span class="outsider">
+                        <div class="info">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="userNam">
+                                <h5>name of player</h5>
+                                <h6>region</h6>
+                            </div>
+                        </div>
+                        <div class="things">
+                            <h4>leaderBoard</h4>
+                            <h4>withdraw</h4>
+                            <h4>settings</h4>
+                            <h4>quit</h4>
+                        </div>
+                        <div class="quit">
+                            <i class="fa-solid fa-close outsidemenu"></i>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="welcome">
+                    <h2>welcome</h2>
+                </div>
+                <label for="username">
+                    username: 
+                    <input type="text" id="inputname">
+                </label>
+                <div class="region">
+                    <span>select region: </span>
+                    <select name="" id="selectregion">
+                        <option value="america">america</option>
+                        <option value="armenia">armenia</option>
+                        <option value="russia">russia</option>
+                        <option value="china">china</option>
+                        <option value="belguim">belguim</option>
+                        <option value="london">london</option>
+                        <option value="france">france</option>
+                        <option value="nigeia">nigeia</option>
+                    </select>
+                </div>
+                <label for="stake">
+                    stake rate: 
+                    <input type="number" name="" id="stakerate">
+                </label>
+            </div>
+
+            <div class="btn">
+                <button class="begin">start game</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

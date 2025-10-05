@@ -10,6 +10,7 @@
     * now moving on to implenting the reward section
     * now lets add the event for the menu section
     * now let implement the rounds increase
+    * implementation of must fill the input
     * push now to github
 */
 
@@ -58,12 +59,16 @@ function inputSettings(){
 let initialCash;
 
 beginGame.addEventListener("click", ()=>{
-    showGame.classList.toggle("nextScreen")
-    mainMenu.classList.toggle("nextScreen")
-    inputSettings()
-    initialCash = Number(stakeRate.value);
-    playerBalance.textContent = `balance: $${stakeRate.value}`
-    roundIncrease.textContent = `round ${differentRounds}`;
+    if(userName.value === "" || stakeRate.value === ""){
+        return
+    }else{
+        showGame.classList.toggle("nextScreen")
+        mainMenu.classList.toggle("nextScreen")
+        inputSettings()
+        initialCash = Number(stakeRate.value);
+        playerBalance.textContent = `balance: $${stakeRate.value}`
+        roundIncrease.textContent = `round ${differentRounds}`;
+    }
 })
 
 function toggleMenu(){
